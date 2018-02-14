@@ -2,7 +2,7 @@
 <rss version="2.0">
   <channel>
     <title>{{blog-name}}</title>
-    <link>{{site-url}}/{{link-url}}</link>
+    <link>{{site-url}}/{{blog-url}}</link>
     <description>{{description}}</description>
     <pubDate>{{current-time}}</pubDate>
     <lastBuildDate>{{current-time}}</lastBuildDate>
@@ -11,10 +11,10 @@
     {{#posts}}
     <item>
       <title>{{title}}</title>
-      <link>{{site-url}}/{{nav-url}}</link>
+      <link>{{site-url}}/{{blog-url}}/{{nav-url}}</link>
       <description><![CDATA[{{description}}]]></description>
       <pubDate>{{creation}}</pubDate>
-      <guid>{{site-url}}/{{nav-url}}</guid>
+      <guid>{{site-url}}/{{blog-url}}/{{nav-url}}</guid>
     </item>
     {{/posts}}
   </channel>

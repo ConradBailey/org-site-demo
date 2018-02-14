@@ -5,6 +5,7 @@
 #+OPTIONS:     H:3 num:nil \n:nil toc:nil ::t |:t ^:nil -:nil f:t *:t <:t
 #+DESCRIPTION: My personal CRUX Linux ports repository
 #+NAV-NAME:    CRUX
+#+NAV-URL:     crux
 
 Download [[https://www3.nd.edu/~cbailey8/crux/cbailey.httpup][cbailey.httpup]], place it in ~/etc/ports~, and run ~ports -u~ to access these ports.
 

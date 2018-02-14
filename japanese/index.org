@@ -1,6 +1,0 @@
-#+TITLE: Japanese Blog Index
-#+NAV-NAME: Japanese
-#+BLOG-NAME: Conrad's Japanese Blog
-#+DESCRIPTION: A blog for my Japanese 1 class
-
-

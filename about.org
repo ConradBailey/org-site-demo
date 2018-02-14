@@ -6,4 +6,4 @@
 #+NAV-NAME:    About
 
 I'm a [[http://cse.nd.edu][Computer Science major]] at the [[https://nd.edu][University of Notre Dame]]. I use
-[[https://crux.nu][CRUX]] on a Lenovo x201.
+[[https://crux.nu][CRUX]] on a Lenovo x220.

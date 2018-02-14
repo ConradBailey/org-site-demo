@@ -1,4 +1,0 @@
-#+TITLE: Japanese Test Post
-#+DESCRIPTION: A test post in the Japanese blog
-
-this is test content
