@@ -1,0 +1,9 @@
+#+TITLE:       About
+#+AUTHOR:      Conrad Bailey
+#+EMAIL:       conradbailey92@gmail.com
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:nil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+#+NAV-NAME:    About
+
+I'm a [[http://cse.nd.edu][Computer Science major]] at the [[https://nd.edu][University of Notre Dame]]. I use
+[[https://crux.nu][CRUX]] on a Lenovo x201.

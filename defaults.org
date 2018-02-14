@@ -1,0 +1,33 @@
+# Template Files
+#+TEMPLATES-DIR: templates
+#+HEADER-TEMPLATE: header.mustache
+#+FOOTER-TEMPLATE: footer.mustache
+#+NAV-TEMPLATE: nav.mustache
+#+CONTAINER-TEMPLATE: container.mustache
+#+BLOG-INDEX-TEMPLATE: blog-index.mustache
+#+POST-TEMPLATE: post.mustache
+
+# Container
+#+LANGUAGE: en-us
+
+# Header
+#+TITLE: None
+#+AUTHOR: None
+#+DESCRIPTION: None
+#+KEYWORDS: None
+#+STYLESHEET-LIST: media/css/main.css media/css/prettify.css
+
+# Nav
+#+SITE-URL: https://www3.nd.edu/~cbailey8
+#+SITE-MAIN-TITLE: Site-Main-Title
+#+SITE-SUB-TITLE: Site-Sub-Title
+#+SHOW-NAV-LINKS: True
+#+NAV-URL: None
+#+NAV-NAME: None
+
+# Footer
+#+SHOW-META: True
+#+SITE-AUTHOR: Conrad Bailey Site Author
+#+SITE-AUTHOR-EMAIL: Site Author Email
+#+GENERATOR-URL: example.com
+#+GENERATOR-NAME: org-site

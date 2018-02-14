@@ -1,0 +1,10 @@
+#+TITLE:       Conrad Bailey's Homepage
+#+AUTHOR:      Conrad Bailey
+#+EMAIL:       conradbailey92@gmail.com
+#+DESCRIPTION: Where Conrad Bailey puts stuff for other people to see.
+#+LANGUAGE:    en
+#+OPTIONS:     H:3 num:nil toc:niil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
+
+#+SHOW-META: False
+
+This is where I post the stuff I do and the things I have to share.

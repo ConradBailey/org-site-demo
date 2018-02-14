@@ -1,0 +1,4 @@
+#+TITLE: Conrad Bailey's Blog Index
+#+BLOG-NAME: Conrad Bailey's Blog
+#+NAV-NAME: Personal Blog
+#+DESCRIPTION: Conrad Bailey's personal blog
