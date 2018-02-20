@@ -1,0 +1,92 @@
+#+TITLE:       Console vs. Console
+#+AUTHOR:      Conrad Bailey
+#+DESCRIPTION: Response to Reading 04 https://www3.nd.edu/~pbui/teaching/cse.40850.sp18/reading04.html
+
+* What Makes a Console?
+
+  It seemed like I always had the wrong console. I had Genesis and all
+  my friends had Nintendos. I had an N64, but all of my friends had
+  Playstations. I must have been the only kid in the school district
+  with a Dreamcast and without a PS2.
+
+  There's a simple reason for this; price and timing. I knew better than
+  to ask for expensive presents, and I never had any money of my own, so
+  I just didn't have reason to pay attention to video game news. My
+  parents tried their best though; they knew I loved video games whether
+  I asked for them or not. So they did their research and just got
+  unlucky; they always got the cheapest console that was still
+  competitive, but they were cheap because they were unpopular. They
+  could have done a lot worse and gotten a Saturn or a Jaguar, and I
+  love the libraries I accumulated for the machines I had, but my
+  experience with video games would be in isolation. I didn't worry
+  about getting better at games to beat my friends, because they never
+  wanted to play my games, so I could focus on playing the games I
+  wanted to play in the exact way I wanted to play them. Some of the
+  games I spent the most time on I never beat, like Sonic. I just spent
+  all of my times scouring the map, drawing my own guides, looking for
+  every last secret room and hidden message.
+
+  Despite my experience, I think the most important difference between
+  consoles is their library of games. Without games consoles are just
+  expensive CD/DVD/Blu-Ray/Netflix players, or completely
+  useless. What makes a great catalog of games is quality, quantity,
+  and marketing. Nintendo always had a moderate quantity of high
+  quality games, and marketing to match. I was too young for the
+  edgy-ness of the Genesis campaign; but I saw Kirby, Mario, Zelda,
+  and Donkey Kong every time I walked into a video rental place, or
+  picked up a Nintendo Power in the school library. The Genesis had
+  great marks in every category, but the Dreamcast had fewer titles,
+  but a handful of extremely high quality, and crap marketing. Most of
+  my friends had no idea what a Dreamcast was until they came to my
+  house. Playstation had more high quality games than any system
+  before it. All of my friends had Spyro and Crash Bandicoot. I had
+  one friend just down the street who owned Legends of Dragoon; that
+  game required /*four CDs!*/ I was so jealous. I knew I loved RPGs,
+  and I was just heartbroken that I couldn't participate in the Final
+  Fantasy series. Sony's marketing was know joke either, but it came
+  hand in hand with star characters like [[http://www.darkspyro.net/skins/set/images/random_full/random_spyro_set.jpg][ Spyro the Dragon]], [[http://omegaswords.com/wp-content/uploads/2015/02/ff7-cloud.jpg][Cloud and
+  his Buster Sword]], and [[http://media.gamestats.com/gg/image/object/002/002128/Tomb_Raider_2_PS1Box.jpg][Lara Croft's...polygons]]. They were fresh and
+  badass, practically selling themselves based on imagery alone.
+
+  So what makes a console? Its games and their marketing. What makes
+  good games? Gameplay and great characters, both of which can be
+  aided, but not solved, by improved hardware. And then finally
+  there's price, but it is not as important as you might imagine in
+  America. Perhaps in the early days uneducated parents made decisions
+  with heavy financial consideration, but in today's market customers
+  are well informed and willing to budget for exactly what they want,
+  no matter their income.
+
+	Game Boy is an outlier I believe. Nobody thinks of a Game Boy as a
+	console; it is virtually a category unto itself. The thing was truly
+	ubiquitous because it had the hottest game the industry has /ever/
+	seen, Pokemon. Even I had a translucent purple Game Boy color, but
+	the only games I owned were Pokemon Red and Blue. The PSP came and
+	went. I think I knew one kid with a grandma who owned a
+	GameGear. But for two or three years it was difficult to find a
+	single boy on the playground without a gameboy and a Pokemon
+	cartridge. So it is truly unfair to lump Game Boys in with
+	non-portable consoles.
+
+** Game Reviews
+*** Sex Vixens From Space
+		[[https://www3.nd.edu/~pbui/teaching/cse.40850.sp18/reading04.html][I didn't make this one up]]
+
+*** Wolfenstein 3D
+		This game is well known for popularizing the first-person shooter,
+		and probably more famous for being the predecessor to DOOM. I have
+		never played it before, but I've heard of it.
+
+		I began play and immediately felt crippled by the lack of
+		crosshairs. Apparently this protagonist carries his firearms at
+		his belly button perpendicular to his body, at all times.
+		[[wolfenstein_3d-1.png]]
+
+		I couldn't really get a grip on the strafing mechanics either,
+		there's some disconnect between my mental model of the environment
+		and how the controls operate in it. I believe both of these
+		observations stem from the [[https://en.wikipedia.org/wiki/Ray_casting][ray-casting]] used to generate the 3D
+		graphics. I must admit it is super fast graphically, which I
+		suppose was really the point in its day. I like to binge games,
+		playing for many, many hours at a time; but this might be a little
+		too fast with such low resolution, it's taxing to play for me.

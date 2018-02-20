@@ -1,0 +1,81 @@
+#+TITLE:       The Relationship Between Traditional Board Games and Modern Video Games
+#+AUTHOR:      Conrad Bailey
+#+DESCRIPTION: Response to Reading 00 https://www3.nd.edu/~pbui/teaching/cse.40850.sp18/reading00.html
+
+* Competition: The Common Origin
+  My family never really played board games. My dad refused to play
+  Battleship with my mother because she would play purely by intuition,
+  erratic, seemingly at random, but she always won and it infuriated
+  him. We played a couple games of Clue, but my sister hated the process
+  of logical deduction necessary to compete, so she'd rage quit. My mom
+  used to love Tetris until it came to light I was even more competitive
+  than her and she couldn't keep up with my high scores. I practiced
+  playing foosball on my own to get competitive with my dad; when my new
+  skills proved very effective my dad flipped the whole table. I would
+  rage quit every trivia game as a kid because I didn't stand a chance
+  against my parents. The only game we ever played more than a handful
+  of times was Sorry; an absolute excuse of a game that needs little to
+  no skill or strategy.
+
+  So the most prevalent relationship between board games and video games
+  in my experience has been their common inspiration for rage
+  quitting. That compulsion is born from fierce competition. Most humans
+  have some compulsion for competition that's expressed through sport or
+  skill. But those expressions require some initial training before you
+  can participate in them, like learning an instrument or being taught
+  to throw and catch.
+
+  I think games often bridge this accessibility gap. Often the rules
+  of a game can be understood in a few minutes, and playing can
+  begin. Players can jump immediately into strategizing. A sport
+  strategies fall apart if a player lacks the physical capabilities
+  necessary to execute them, but a game allows any strategy to be
+  immediately executed. There is no prerequisite ability in playing
+  cards, rolling dice, pressing buttons, or moving joysticks. You
+  don't need to be tall, fast, or strong to play or even enjoy
+  Monopoly or Mario; you only need your hands.
+
+* Physical and Digital
+	There are very few board games that cannot be implemented digitally,
+	and those that come to mind, like Twister, only loosely resemble
+	board games. So in this sense video games are a natural evolution of
+	the board game. Digitalization allows for games that are massive in
+	scale and distribution. The computer is the ultimate game master:
+	unbiased and instant. Computing graduates games from static to
+	dynamic. They can immerse the player in ways no board game can:
+	light, sound, and narrative. And players can be passively immersed;
+	board games that attempt to immerse, like Dungeons and Dragons,
+	require a lot from a player's imagination to hook them.
+
+	But video games may struggle to inspire nostalgia the way a board
+	game can. People generally don't pass save data down to their
+	children, but it's not uncommon for a chess board to be decades
+	old. Who hasn't improvised some missing game piece with a funny
+	knick-knack? And there's something to be said for proximity. Board
+	games generally require the players to share there space and time
+	with eachother, to connect directly. Early video game multiplayer
+	experiences came close to this, and a generation of players has
+	incredible nostalgia concerning this dynamic. But with the ever
+	rising popularity of networked gaming the multiplayer experience
+	takes players farther and farther away. Even if they're in the same
+	room rarely do they share the same screen. And I think that's partly
+	why a resurgence in table-top gaming has occurred. The intimacy of
+	that interaction is satisfying. There's a vivid shared experience
+	amongst the players; you feel like a part of something permanent,
+	the memory of it. Video games can be played at any time, anywhere,
+	and this may give them a transient quality.
+
+* The Similarities
+	For all their differences, board games and video games are designed
+	to be played. People play them to pass the time, to go on an
+	adventure, or to test their mettle. They must engage the player and
+	convince them that playing the game is worth their time. The player
+	expects reward for their struggles, and creativity in those
+	struggles. The player doesn't want to be patronized, but they'll be
+	frustrated by unreasonable difficulty. They expect to be treated
+	fairly by the game. Enjoyment is not directly related to simplicity
+	or complexity; both have their place. These qualities are necessary
+	for a good game, of any kind, because a good game is a vehicle for
+	human struggle and reward; where the latter may not follow the
+	former in our real lives, we expect games to reliably provide this
+	dynamic in a format that we find palatable. That is their purpose.

@@ -1,0 +1,121 @@
+#+TITLE:       The Golden Age
+#+AUTHOR:      Conrad Bailey
+#+DESCRIPTION: Response to Reading 02 https://www3.nd.edu/~pbui/teaching/cse.40850.sp18/reading02.html
+
+* Pitfall!
+	My mother is the only other person in my family who enjoyed video
+	games, and she only really enjoyed three: [[https://en.wikipedia.org/wiki/Tetris][Tetris]] ([[https://en.wikipedia.org/wiki/Microsoft_Entertainment_Pack][Windows
+	Entertainment Pack]]), [[https://en.wikipedia.org/wiki/Columns_(video_game)][Columns]] (Sega Genesis), and [[https://en.wikipedia.org/wiki/Pitfall:_The_Mayan_Adventure][Pitfall: The Mayan
+	Adventure]] (Win95). So Pitfall was a real outlier. I'd watch her for
+	hours as she hoarded boomerangs in anticipation of the boss battles
+	against one, sometimes two jaguars, or god forbid she made it all
+	the way to the giant golem. So naturally I looked to play its
+	ancestor first.
+
+	Immediately I recognized the scorpion because Mayan Adventure paid
+	homage by shoehorning this primitive graphic into its 16-bit
+	environment.
+
+	[[pitfall_1.png]]
+
+	I found the controls intuitive, but then again I've been playing
+	video games since I could barely read. The objective is not
+	immediately clear, but there's clearly a 20 minute time limit for
+	whatever it is. I found that if I went far enought to the right
+	there was a silver/gold bar of some sort.
+
+	[[pitfall_2.png]]
+
+	Graphically this game far outshines many of the other 2600
+	games. There's lush, varied backgrounds and interesting combinations
+	of scenery. The running animation is smooth, the vine animation is
+	clean, and he even sinks into the pits if you fall in. The sound
+	effects are sparse but fitting, especially the Tarzan warble when
+	jumping off a vine.
+
+	Without a manual my instincts told me that each screen was being
+	randomly generated and probably just went on into infinity, the
+	objective being to achieve the highest score before time runs
+	out. It's not an unreasonable hypothesis; many popular games were
+	designed without an end-game like Pac-Man and Donkey Kong. I was not
+	very motivated to play the game if that objective was in fact true;
+	thankfully my hypothesis was wrong.
+
+	After doing some research I found that there is 32 pieces of
+	treasure to be collected in the time limit, and the map is
+	deterministic. That's a great feature; I immediately want to map out
+	the whole game, take measurements, and strategize the best path for
+	completing the objective. And then once you've got a handle on
+	collecting the treasure, you can further refine your skill in
+	pursuit of a perfect score! The research also brought up this great
+	[[http://www.gdcvault.com/play/1014632/Classic-Game-Postmortem-PITFALL][post-mortem]] by the author, David Crane. The amount of ingenuity that
+	saturates every aspect of this simple, primitive game is astounding!
+
+* Yar's Revenge
+	I remember playing this as a kid somehow. Maybe it was on the
+	internet, or at a friends house, or maybe it's been implanted in me
+	for some nefarious reason. Nonetheless, I remember being attracted
+	to the rainbow stripe of static and the cover art. The name
+	immediately triggers that sci-fi sense, that there's something cool
+	underlying the art and everything. Who is Yar? Who is Yar seeking
+	revenge against? And for what?
+
+	[[yars_1.png]]
+
+	I mentioned the 'void' of a black TV screen in an earlier post, and
+	boy does Yar's take advantage: there's no frame! Every other 2600
+	game I've played had some frame that seperates the score and other
+	information like that from the field of gameplay. I think it's a
+	great decision that amplifies the immersion.
+
+	I'm a sucker for rainbows and I still love the static stuff. Come to
+	find out, it's actually the game's source code just loaded into the
+	graphics registers! Atari's legal department got wind of this and
+	was worried someone might steal the code by piecing together
+	screenshots. They weren't satisfied with the copyright situation
+	until the author put the static through a masking process before
+	displaying!
+
+	I kind of like zoning out with this game. It's simple, and pretty
+	unchanging, but challenging.
+
+* Tennis
+	This game is not much fun. The computer is frustratingly good, and
+	there's little in the way of strategizing. It took me a while to
+	determine shot angle was based mostly, if not entirely, on the
+	distance between the ball and player when it is struck. Therefore to
+	get a good shot off you must risk missing the ball entirely. The
+	graphics are very dull, and little to no need to approach the
+	net. In sum it was boring, difficult, and unrewarding.
+
+	[[tennis_1.png]]
+
+* Conclusions
+	I think the thing that makes these games so memorable is their role
+	in video game history. The objective from a design perspective was
+	not to make the player hemorrage quarters, but instead to engage and
+	entertain. So to that end, every new innovation they made was new
+	for the field over all. Pitfall introduced players to a sidelong
+	platformer. Yar's Revenge brought explosions and psychedelic colors
+	to an often drab library of games. Players were introduced to new
+	paradigms as they were invented.
+
+	These games also demonstrate the intrinsic relationship between
+	games and their platform. The authors had to first ask themselves
+	what they were /capable/ of creating with the 2600, and only after
+	they had convinced themselves of the answer could they begin to ask
+	themselves what they /wanted/ to create. /Pitfall!/ was crafted
+	around a running man animation the author invented two years
+	prior. The author of /Adventure/ was told by his boss not to pursue
+	the impossible, but he proved him wrong and built a game around this
+	counter-proof. Every memorable game was a bold experiment who's
+	success was completely unpredictable. These games were the work of
+	individuals, not teams, and they sometimes even bare their
+	signature. These are the symptoms of art pieces. Rudimentary though
+	they may be, they pushed the frontier of their medium
+	technologically and artistically.
+
+	From this relationship we may extrapolate that new technology will
+	always inspire new gaming paradigms. But I doubt any technological
+	advance today could inspire the kind of creative fervor that
+	followed the invention of the format.

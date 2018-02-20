@@ -1,0 +1,4 @@
+#+TITLE: History of Computing Reflections
+#+BLOG-NAME: History of Computing Reflections
+#+NAV-NAME: history_of_computing
+#+DESCRIPTION: My responses to the readings for [[https://www3.nd.edu/~pbui/teaching/cse.40850.sp18/][CSE 40850 - History of Computing]]

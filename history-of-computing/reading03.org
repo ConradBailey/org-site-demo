@@ -1,0 +1,162 @@
+#+TITLE:       Console vs. Computer
+#+AUTHOR:      Conrad Bailey
+#+DESCRIPTION: Response to Reading 03 https://www3.nd.edu/~pbui/teaching/cse.40850.sp18/reading03.html
+
+* The Battle
+  The most obvious difference between console and computer is the
+  interface. A keyboard just has so many more buttons! You can customise
+  key-mappings and attribute complex sequences to a single keypress. And
+  a mouse has proven to be faster and more accurate than a d-pad or
+  joystick for most applications. Combine that with the left and right
+  clickers and a clever game designer won't even need the keyboard.
+
+  Next up is the difference in technology. These are the relase dates
+  for the Playstation consoles: 1995, 2000, 2006, and 2014. That means
+  graphics can't get any better, processors can't get any faster, and
+  games can't get any bigger for 5 to 7 years. Not to mention the
+  systems are designed years before release, so the technology is
+  necessarily already outdated when the first customer purchases the
+  console. PC's do not suffer the same way; their hardware can be
+  updated at will. This also aloows computer gamer designers to design
+  with an eye towards the future; relying on the promise that certain
+  technological advancements will have been made by the time their game
+  is ready.
+
+  So it's really these differences that underpin the cultural
+  differences between the two paradigms. PC's have incredible interface
+  and technological capabilities, at the price of steep learning curves
+  and maintenance. Consoles have technological limitations, but they
+  carry a promise to the customer to 'just work'. It's always easier to
+  put a cartridge into a slot than it is to install software. You can be
+  upside down on a sofa 20 feet from your big screen TV and use a
+  controller, but you have to be upright at a desk to use a mouse and
+  keyboard.
+
+  And so naturally video-game consumers diverge along these
+  lines. Players looking for a catered, streamlined, 'casual' experience
+  will find themselves leaning towards console gaming. Players looking
+  to micro-manage their own experience look towards a PC to provide that
+  level of customization. Studios are aware of this divide, and produce
+  games accordingly. You won't find games like Civilization or Star
+  Citizen on consoles because they are incredibly complex to play and
+  require complex interfaces and interactions that are only suitbale for
+  mouse and keyboard. Likewise the most popular console games like Super
+  Mario Bros. or Fifa will not be the most popular PC games because
+  they're just more fun and more comfortable on a console.
+
+* Early PC Games
+** Apple II
+	 I never owned an Apple II, and I don't think I've ever interacted
+	 with one. I have vague memories of Macintosh computers in our
+	 computer lab back in kindergarten in 1998, but I don't think they
+	 were Apple II's.
+
+	 Despite having no personal history with the machine, I'm very aware
+	 of its place in history, so I was excited to explore this platform
+	 first.
+
+*** Strip Poker - Melissa & Suzi
+		Lol, just kidding. I didn't play that game. For class anyway.
+
+*** Pacman
+		I'm starting here because so far it's a good standard to compare
+		platforms - everybody's gotta have a Pacman clone.
+
+		The first thing I noticed was the weird colors
+
+		[[pacman-1.png]]
+
+		I was under the impression that the Apple II was
+		monochromatic. After some research I've found that color on the
+		Apple II was [[https://www.xtof.info/blog/?p=768][/not simple/]]. On top of that there were a few
+		different versions of the Apple II, so it's difficult to know what
+		exact configuration is being emulated. Suffice to say, when color
+		on the Apple II is just one of Woz's famous hacks, and operates
+		like it; notice the low resolution and interference between
+		adjacent colors. In light of these quirks, I assume some
+		compromises must be made graphically, like the size of the fruit.
+		[[pacman-2.png]]
+
+		The Apple II did not have up/down arrow keys, only left/right, so
+		Pac-Man uses A and Z for up and down. It's weird for me, but
+		probably somewhat natural on that hardware. The game feels a
+		little slower than the arcade version, but leaps and bounds ahead
+		of the Atari 2600 version!
+
+*** Lode Runner
+		I decided to try this game next because I've never heard of it,
+		but it's on everybody's top ten Apple II list. Of note, it's the
+		first game to feature a level editor! It's a puzzle and platformer
+		mix, again another first.
+
+
+    The game starts off with a fancy [[https://en.wikipedia.org/wiki/Film_transition#Iris_wipe][iris wipe]], so that's pretty
+    impressive. The designer has chosen his color pallete to minimize
+    interference. The gameplay feels really smooth, and only one hand is
+    required (i, j, k, l, u, o), so the game is very easy to get sucked
+    into right away.
+
+		I got to level 3 before deciding to move on. I know, pics or it
+		didn't happen.
+		[[loderunner-1.png]]
+
+		This game was really excellent, and still the work of only one
+		person, Doug Smith. The idea of putting the power of creative
+		expression into the player's hands is an, ahem, /game changing/
+		innovation.
+
+** DOS
+	 I'm not sure if I've ever interacted with a real DOS machine. I
+	 barely remember the first computer my family had; it was about the
+	 size of a microwave and I didn't touch it because if I did I would
+	 probably get blamed for the crashes that plagued the damn thing and
+	 destroyed my parents' unsaved work. It might've been running
+	 Windows 95, maybe Windows 3.X, or maybe DOS. Can't remember.
+
+*** Pac-Man
+		The graphics are much closer to the arcade version than many other
+		platforms. They nailed the melodic sound effects used during
+		transitions, but the gameplay sounds are terrible. They replaced
+		'wacka-wacka' with varying siren sounds that are just grating. It
+		also appears the color pallete was restricted to the spectrum
+		between green and red, which is not nearly as appealing as the
+		bright neons and high contrasts of the arcade game. The speed
+		seems closer to the arcade than other platforms, but still a
+		little too slow. For an off-brand port it's alright, but I can't
+		get sucked into it like the arcade version, it's just that little
+		bit off.
+
+		I mean seriously, these colors look like a set of 70's
+		plastic-ware.
+		[[dos-pacman-1.png]]
+		[[http://www.retroland.com/wp-content/uploads/2015/01/Tupperware.jpg]]
+
+*** Prince of Persia
+		I picked this out because I played its successors on Playstation
+		2, and they were fantastic!
+
+		Boy, this game isn't like those /at all/. I mean, the protaganist
+		is male, it takes place in Persia, and he can jump, kinda, but
+		that's where the similarities end. This character is *sluggish*. I
+		feel like I'm pushing him through the effects of a poorly timed
+		Ambien. I have to press jump 2 steps before the gap. The climbing
+		mechanics are obscure. The field of vision is so small I get a
+		claustrophobic sense, but I can't tell if that's artistic
+		direction, technological limitation, or both. And the character is
+		straight up boring; slow, weak, and his outfit makes him look like
+		a young Donald Trump escaping a mental institution.
+
+		[[prince_of_persia-1.png]]
+
+		I spent far too long trying to get past this part. Finally I broke
+		down and watched a walk-through; this place is a dead-end. Crap.
+
+		[[prince_of_persia-2.png]]
+
+		The deaths are pretty brutal though, so there's that
+
+		[[prince_of_persia-3.png]]
+
+		All in all, this game must have been innovative and influential in
+		it's day, but it has not aged well. I found it boring and
+		frustrating.
