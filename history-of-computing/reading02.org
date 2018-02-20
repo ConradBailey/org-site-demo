@@ -1,6 +1,8 @@
 #+TITLE:       The Golden Age
 #+AUTHOR:      Conrad Bailey
 #+DESCRIPTION: Response to Reading 02 https://www3.nd.edu/~pbui/teaching/cse.40850.sp18/reading02.html
+#+CREATION:    2018-02-03
+#+OPTIONS:     toc:nil
 
 * Pitfall!
 	My mother is the only other person in my family who enjoyed video
@@ -16,7 +18,7 @@
 	homage by shoehorning this primitive graphic into its 16-bit
 	environment.
 
-	[[pitfall_1.png]]
+	[[./pitfall_1.png]]
 
 	I found the controls intuitive, but then again I've been playing
 	video games since I could barely read. The objective is not
@@ -24,7 +26,7 @@
 	whatever it is. I found that if I went far enought to the right
 	there was a silver/gold bar of some sort.
 
-	[[pitfall_2.png]]
+	[[./pitfall_2.png]]
 
 	Graphically this game far outshines many of the other 2600
 	games. There's lush, varied backgrounds and interesting combinations
@@ -60,7 +62,7 @@
 	underlying the art and everything. Who is Yar? Who is Yar seeking
 	revenge against? And for what?
 
-	[[yars_1.png]]
+	[[./yars_1.png]]
 
 	I mentioned the 'void' of a black TV screen in an earlier post, and
 	boy does Yar's take advantage: there's no frame! Every other 2600
@@ -88,7 +90,7 @@
 	graphics are very dull, and little to no need to approach the
 	net. In sum it was boring, difficult, and unrewarding.
 
-	[[tennis_1.png]]
+	[[./tennis_1.png]]
 
 * Conclusions
 	I think the thing that makes these games so memorable is their role

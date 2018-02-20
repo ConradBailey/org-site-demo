@@ -1,6 +1,8 @@
 #+TITLE:       Console vs. Computer
 #+AUTHOR:      Conrad Bailey
 #+DESCRIPTION: Response to Reading 03 https://www3.nd.edu/~pbui/teaching/cse.40850.sp18/reading03.html
+#+CREATION:    2018-02-11
+#+OPTIONS:     toc:nil
 
 * The Battle
   The most obvious difference between console and computer is the
@@ -64,7 +66,7 @@
 
 		The first thing I noticed was the weird colors
 
-		[[pacman-1.png]]
+		[[./pacman-1.png]]
 
 		I was under the impression that the Apple II was
 		monochromatic. After some research I've found that color on the
@@ -75,7 +77,7 @@
 		like it; notice the low resolution and interference between
 		adjacent colors. In light of these quirks, I assume some
 		compromises must be made graphically, like the size of the fruit.
-		[[pacman-2.png]]
+		[[./pacman-2.png]]
 
 		The Apple II did not have up/down arrow keys, only left/right, so
 		Pac-Man uses A and Z for up and down. It's weird for me, but
@@ -98,7 +100,7 @@
 
 		I got to level 3 before deciding to move on. I know, pics or it
 		didn't happen.
-		[[loderunner-1.png]]
+		[[./loderunner-1.png]]
 
 		This game was really excellent, and still the work of only one
 		person, Doug Smith. The idea of putting the power of creative
@@ -128,7 +130,7 @@
 
 		I mean seriously, these colors look like a set of 70's
 		plastic-ware.
-		[[dos-pacman-1.png]]
+		[[./dos-pacman-1.png]]
 		[[http://www.retroland.com/wp-content/uploads/2015/01/Tupperware.jpg]]
 
 *** Prince of Persia
@@ -146,16 +148,16 @@
 		straight up boring; slow, weak, and his outfit makes him look like
 		a young Donald Trump escaping a mental institution.
 
-		[[prince_of_persia-1.png]]
+		[[./prince_of_persia-1.png]]
 
 		I spent far too long trying to get past this part. Finally I broke
 		down and watched a walk-through; this place is a dead-end. Crap.
 
-		[[prince_of_persia-2.png]]
+		[[./prince_of_persia-2.png]]
 
 		The deaths are pretty brutal though, so there's that
 
-		[[prince_of_persia-3.png]]
+		[[./prince_of_persia-3.png]]
 
 		All in all, this game must have been innovative and influential in
 		it's day, but it has not aged well. I found it boring and

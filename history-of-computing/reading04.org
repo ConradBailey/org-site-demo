@@ -1,6 +1,8 @@
 #+TITLE:       Console vs. Console
 #+AUTHOR:      Conrad Bailey
 #+DESCRIPTION: Response to Reading 04 https://www3.nd.edu/~pbui/teaching/cse.40850.sp18/reading04.html
+#+CREATION:    2018-02-17
+#+OPTIONS:     toc:nil
 
 * What Makes a Console?
 
@@ -68,11 +70,11 @@
 	cartridge. So it is truly unfair to lump Game Boys in with
 	non-portable consoles.
 
-** Game Reviews
-*** Sex Vixens From Space
+* Game Reviews
+** Sex Vixens From Space
 		[[https://www3.nd.edu/~pbui/teaching/cse.40850.sp18/reading04.html][I didn't make this one up]]
 
-*** Wolfenstein 3D
+** Wolfenstein 3D
 		This game is well known for popularizing the first-person shooter,
 		and probably more famous for being the predecessor to DOOM. I have
 		never played it before, but I've heard of it.
@@ -80,7 +82,7 @@
 		I began play and immediately felt crippled by the lack of
 		crosshairs. Apparently this protagonist carries his firearms at
 		his belly button perpendicular to his body, at all times.
-		[[wolfenstein_3d-1.png]]
+		[[./wolfenstein_3d-1.png]]
 
 		I couldn't really get a grip on the strafing mechanics either,
 		there's some disconnect between my mental model of the environment

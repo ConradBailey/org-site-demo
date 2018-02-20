@@ -1,6 +1,8 @@
-#+TITLE:       The Difficulties and Innovations of Early Video Games
+#+TITLE:       The Highs and Lows of Early Video Games
 #+AUTHOR:      Conrad Bailey
 #+DESCRIPTION: Response to Reading 01 https://www3.nd.edu/~pbui/teaching/cse.40850.sp18/reading01.html
+#+CREATION:    2018-01-27
+#+OPTIONS:     toc:nil
 
 The earliest video games were designed to push their platforms'
 capabilities as far as possible. Their purpose was to demonstrate the
