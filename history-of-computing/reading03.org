@@ -92,15 +92,15 @@
 		mix, again another first.
 
 
-    The game starts off with a fancy [[https://en.wikipedia.org/wiki/Film_transition#Iris_wipe][iris wipe]], so that's pretty
-    impressive. The designer has chosen his color pallete to minimize
-    interference. The gameplay feels really smooth, and only one hand is
-    required (i, j, k, l, u, o), so the game is very easy to get sucked
-    into right away.
+    The game starts off with a fancy [[https://en.wikipedia.org/wiki/Film_transition#Iris_wipe][iris wipe]], [[./lode_runner-1.png]] so
+		that's pretty impressive. The designer has chosen his color
+		pallete to minimize interference. The gameplay feels really
+		smooth, and only one hand is required (i, j, k, l, u, o), so the
+		game is very easy to get sucked into right away.
 
 		I got to level 3 before deciding to move on. I know, pics or it
 		didn't happen.
-		[[./loderunner-1.png]]
+		[[./lode_runner-2.png]]
 
 		This game was really excellent, and still the work of only one
 		person, Doug Smith. The idea of putting the power of creative
