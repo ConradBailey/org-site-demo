@@ -2,7 +2,7 @@
 #+AUTHOR:      Conrad Bailey
 #+DESCRIPTION: Response to Reading 03 https://www3.nd.edu/~pbui/teaching/cse.40850.sp18/reading03.html
 #+CREATION:    2018-02-11
-#+OPTIONS:     toc:nil
+#+OPTIONS:     toc:nil num:nil
 
 * The Battle
   The most obvious difference between console and computer is the

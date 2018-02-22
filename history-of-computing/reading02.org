@@ -2,7 +2,7 @@
 #+AUTHOR:      Conrad Bailey
 #+DESCRIPTION: Response to Reading 02 https://www3.nd.edu/~pbui/teaching/cse.40850.sp18/reading02.html
 #+CREATION:    2018-02-03
-#+OPTIONS:     toc:nil
+#+OPTIONS:     toc:nil num:nil
 
 * Pitfall!
 	My mother is the only other person in my family who enjoyed video

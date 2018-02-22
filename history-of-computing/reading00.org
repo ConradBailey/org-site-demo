@@ -2,7 +2,7 @@
 #+AUTHOR:      Conrad Bailey
 #+DESCRIPTION: Response to Reading 00 https://www3.nd.edu/~pbui/teaching/cse.40850.sp18/reading00.html
 #+CREATION:    2018-01-20
-#+OPTIONS:     toc:nil
+#+OPTIONS:     toc:nil num:nil
 
 * Competition: The Common Origin
   My family never really played board games. My dad refused to play
