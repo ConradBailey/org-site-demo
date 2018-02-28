@@ -43,7 +43,7 @@ no heading
 * Heading 2
 	Some regular text
 	testing embedded youtube
-	[[yt:https://www.youtube.com/watch?v=qXp8T097vjc]]
+	[[yt:J---aiyznGQ]]
 
 ** Caption testing
 	 captino on image

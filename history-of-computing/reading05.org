@@ -7,9 +7,10 @@
 * What I Thought It Would Be Like
 	Motion sensing input devices. You make movements and the computer
 	mirrors them. I had visions of /[[https://youtu.be/UZd6-t27fx8?list=PL67402E34484EB718&t=366][The Big O]]/ and /[[https://youtu.be/nzZ7Qjh9y_0?list=PLaQe-kZ3DtILF6ty2TtguKnQboYk-p8op&t=961][Gundam]]/. I wanted,
-	no *expected*, to feel the power of a [[https://youtu.be/74-dYu0CqFA?t=44][Jaeger]]. Instead, I got [[https://www.youtube.com/watch?v=J---aiyznGQ][this]].
+	no *expected*, to feel the power of a [[https://youtu.be/74-dYu0CqFA?t=44][Jaeger]]. Instead, I got this.
+	[[yt:qXp8T097vjc]]
 
-	Now I'm sure there were good games that utlized the Kinect, but I'm
+	Now I'm sure there were good games that utilized the Kinect, but I'm
 	generally knowledgable about this sort of thing and I cannot think
 	of a popular example. The controls are just a little bit
 	nondeterministic, and that can easily ruin a gaming experience. When
@@ -39,7 +40,7 @@
 
 * The Wii Workaround
 	The Wii works around this issue by sensing the motion of a
-	controller, and thereby only indreictly sensing the motion of the
+	controller, and thereby only indirectly sensing the motion of the
 	player. This is a great compromise! There's little to no guessing on
 	the part of the console, yet the player still participates in a
 	highly interactive experience. The Wii is the last console I owned,
@@ -56,7 +57,8 @@
 	for gamers and children. But anybody could pick up one of those
 	plastic guitars and instantly grasp the concept, and everybody
 	did. It had everything: wide ranges in difficulty, nostalgia,
-	competition, and inspiring/impossible challenges ([[https://www.youtube.com/watch?v=cyKdFb1ZWUU][blindfolded 100%
+	competition, and inspiring/impossible challenges
+	([[https://www.youtube.com/watch?v=cyKdFb1ZWUU][blindfolded 100%
 	Expert TTFATF anyone?]]).
 
 	But there were too many releases and the song catalogs seemed to be
@@ -104,22 +106,22 @@
 	 But best of all was the narrative and the characters.
 
 	 - *HK-47* is a trigger-happy translation/assassination droid
-		 [[https://www.youtube.com/watch?v=Vg1gTas7OAA]]
+		 [[yt:Vg1gTas7OAA]]
 
 	 - *Darth Malak* is the main antagonist. And by way of brilliant
 		 writing, you must face him no matter your morality.
-		 [[https://staticdelivery.nexusmods.com/mods/234/images/96464_7.jpg]]
+     [[https://staticdelivery.nexusmods.com/mods/234/images/96464_7.jpg]]
 
 	 - *R2-D2*, err I mean *T3-M4* is your classic /Star Wars/ tag-along
      droid. Excellent at hacking computer security. Speeks in bleeps
      and bloops.
-		 [[http://static3.wikia.nocookie.net/__cb20071012010222/starwars/images/f/fb/T3M4-NEGD.jpg]]
+     [[http://static3.wikia.nocookie.net/__cb20071012010222/starwars/images/f/fb/T3M4-NEGD.jpg]]
 
 	 If you never picked this game up I think you'll find the story and
 	 mechanics compelling enough to look past the somewhat dated
 	 graphics. Did I mention there are Rancors? Every Star Wars game
-	 should have Rancors.
-	 [[https://vignette.wikia.nocookie.net/starwars/images/a/ad/Sewerrancor.jpg/revision/latest?cb=20130615222255]]
+	 should have Rancors.  [[./Sewerrancor.jpg]]
 
 ** Crysis
-	 lol. Never had a computer good enough. Because if you can't run it on Max settings, what's really the point?
+	 lol. Never had a computer good enough. Because if you can't run it
+	 on Max settings, what's really the point?
