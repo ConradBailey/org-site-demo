@@ -1,0 +1,125 @@
+#+TITLE:       Reading 05: Passive vs. Interactive Gaming
+#+AUTHOR:      Conrad Bailey
+#+DESCRIPTION: Response to Reading 05 https://www3.nd.edu/~pbui/teaching/cse.40850.sp18/reading05.html
+#+CREATION:    2018-02-24
+#+OPTIONS:     toc:nil num:nil
+
+* What I Thought It Would Be Like
+	Motion sensing input devices. You make movements and the computer
+	mirrors them. I had visions of /[[https://youtu.be/UZd6-t27fx8?list=PL67402E34484EB718&t=366][The Big O]]/ and /[[https://youtu.be/nzZ7Qjh9y_0?list=PLaQe-kZ3DtILF6ty2TtguKnQboYk-p8op&t=961][Gundam]]/. I wanted,
+	no *expected*, to feel the power of a [[https://youtu.be/74-dYu0CqFA?t=44][Jaeger]]. Instead, I got [[https://www.youtube.com/watch?v=J---aiyznGQ][this]].
+
+	Now I'm sure there were good games that utlized the Kinect, but I'm
+	generally knowledgable about this sort of thing and I cannot think
+	of a popular example. The controls are just a little bit
+	nondeterministic, and that can easily ruin a gaming experience. When
+	I press a button I am assured that a circuit has closed and the game
+	will interpret it the same way under the same conditions every
+	time. But motion capture systems rely on machine vision, which at
+	it's core relies on probabilities to make a best guess. The passive
+	interface never has to guess whether I pressed a button, it /knows/.
+
+	The problem only compounds when you branch into augmented
+	reality. The "best guess" phenomenon bites the player again where
+	artifacts aren't scaled correctly or don't appear when they
+	should. There's no chance for immersion. There's no v1.0, they all
+	feel like <1.0 betas.
+
+	For Christmas sometime in the late nineties I got a "virtual
+	reality" video game. It was a standalone device my parents must have
+	gotten on sale at Wal-Mart. There was a headset/helmet that when put
+	on your head enveloped you in darkness. Attached to this headset
+	were four sensors to be placed on your limbs -- one for each hand
+	and foot. Ninjas (well, their red outlines anyway) would appear in
+	the headset and throw shurikens at you. It was your duty to swing
+	these sensors around to block their attacks and throw your own
+	shurikens. It worked about as well as you'd expect for 199X. I feel
+	like today's virtual reality systems are only graphically superior,
+	the interface remains the same.
+
+* The Wii Workaround
+	The Wii works around this issue by sensing the motion of a
+	controller, and thereby only indreictly sensing the motion of the
+	player. This is a great compromise! There's little to no guessing on
+	the part of the console, yet the player still participates in a
+	highly interactive experience. The Wii is the last console I owned,
+	and I loved it. The controls could be simple enough to appeal to
+	non-gamers (my parents and sister), but had the potential for
+	hardcore appeal (/Mario Kart/ is not for beginners, and I think I
+	might be the only person to play /Call of Duty/ exclusively on the
+	Wii).
+
+* Peripheral Hero
+	/Guitar Hero/ reached heights I hadn't experienced before and came
+	crashing down, very much like Atari and the 80's crash. I wasn't
+	around for any of the arcade crazes or manias, and Pokemon was only
+	for gamers and children. But anybody could pick up one of those
+	plastic guitars and instantly grasp the concept, and everybody
+	did. It had everything: wide ranges in difficulty, nostalgia,
+	competition, and inspiring/impossible challenges ([[https://www.youtube.com/watch?v=cyKdFb1ZWUU][blindfolded 100%
+	Expert TTFATF anyone?]]).
+
+	But there were too many releases and the song catalogs seemed to be
+	the only difference. The fandom splintered and grew bored.
+
+	So what was the magic? How do you bottle it up? At least part of it
+	is the interface, and it's not unique to music games. The formula is
+	to take some common, everyday interface, dumb it down or spruce it
+	up depending, and then control a game with it. A guitar becomes 6
+	buttons and toggle. An aerobics platform becomes two big buttons
+	(/Wii Fit/). The Wii did it best with an even simpler formula: turn
+	it into plastic with a hole for the WiiMote. Steering Wheel?
+	Done. Tennis Racket? Done. Fishing Rod? Done. Where your parents
+	could probably use a WiiMote, even your /grandparents/ know how to
+	use a tennis racket.
+
+	This marks the completion of a cycle. Where once a joystick allowed
+	anyone to play tennis, today a tennis racket allows anyone to play a
+	video game.
+
+* Game Reviews
+	My laptop is really not powerful enough to play games, and I've
+	handcuffed myself to a niche operating system so I probably couldn't
+	install them if I could and wanted to play them.
+
+	So in this section I'll be borrowing screenshots from around the web
+	to review games that I've played in the past.
+
+** Star Wars: Knights of the Old Republic
+	 I didn't get new games very often, and when I did it was either my
+	 birthday or Christmas. But one fateful day a Sam Goody was closing
+	 (so this must have been around 2006) and my mom happened to walk
+	 inside and get this game for me, completely serendipitously. This
+	 means I got the game about 3 years after it had been released for
+	 Windows. Easily one of my top ten, maybe five games all time, and
+	 that's a pretty popular opinion.
+
+	 The world is enormous. The dialogue branches are expansive. I spent
+	 a lot of time creating and reverting to save states to explore
+	 dialogue branches alone.
+
+	 The incredible array of weapons, skills, and Force abilities
+	 yielded an endless number of play-styles.
+
+	 But best of all was the narrative and the characters.
+
+	 - *HK-47* is a trigger-happy translation/assassination droid
+		 [[https://www.youtube.com/watch?v=Vg1gTas7OAA]]
+
+	 - *Darth Malak* is the main antagonist. And by way of brilliant
+		 writing, you must face him no matter your morality.
+		 [[https://staticdelivery.nexusmods.com/mods/234/images/96464_7.jpg]]
+
+	 - *R2-D2*, err I mean *T3-M4* is your classic /Star Wars/ tag-along
+     droid. Excellent at hacking computer security. Speeks in bleeps
+     and bloops.
+		 [[http://static3.wikia.nocookie.net/__cb20071012010222/starwars/images/f/fb/T3M4-NEGD.jpg]]
+
+	 If you never picked this game up I think you'll find the story and
+	 mechanics compelling enough to look past the somewhat dated
+	 graphics. Did I mention there are Rancors? Every Star Wars game
+	 should have Rancors.
+	 [[https://vignette.wikia.nocookie.net/starwars/images/a/ad/Sewerrancor.jpg/revision/latest?cb=20130615222255]]
+
+** Crysis
+	 lol. Never had a computer good enough. Because if you can't run it on Max settings, what's really the point?
