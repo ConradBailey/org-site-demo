@@ -1,0 +1,16 @@
+#+TITLE:       Reading 05: Passive vs. Interactive Gaming
+#+AUTHOR:      Conrad Bailey
+#+DESCRIPTION: Response to Reading 05 https://www3.nd.edu/~pbui/teaching/cse.40850.sp18/reading05.html
+#+CREATION:    2018-02-24
+#+OPTIONS:     toc:nil num:nil
+
+* What I Thought It Would Be Like
+	Motion sensing input devices. You make movements and the computer
+	mirrors them. I had visions of /[[https://youtu.be/UZd6-t27fx8?list=PL67402E34484EB718&t=366][The Big O]]/ and /[[https://youtu.be/nzZ7Qjh9y_0?list=PLaQe-kZ3DtILF6ty2TtguKnQboYk-p8op&t=961][Gundam]]/. I wanted,
+	no *expected* to feel the power of a [[https://youtu.be/74-dYu0CqFA?t=44][Jaeger]]. Instead, I got this.
+	#+CAPTION: And you thought the /[[https://www.youtube.com/watch?v=wIBkRs3pPKI][Star Wars Holiday Special]]/ was bad...
+	[[yt:https://www.youtube.com/watch?v=qXp8T097vjc]]
+
+	Now I'm sure there were good games that utlized the Kinect, but I'm
+	generally knowledgable about this sort of thing and I cannot think
+	of a popular example. The controls are just not intuitive. 

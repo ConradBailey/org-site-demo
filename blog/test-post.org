@@ -40,3 +40,16 @@ no heading
 
 ***** sub 4
       [[https://www.google.com][Google-test-link]]
+* Heading 2
+	Some regular text
+	testing embedded youtube
+	[[yt:https://www.youtube.com/watch?v=qXp8T097vjc]]
+
+** Caption testing
+	 captino on image
+	 #+CAPTION: this is an image of bulbasaur with a transparent background
+	 [[http://images6.fanpop.com/image/polls/1581000/1581312_1471559996097_full.png]]
+
+	 caption on a youtube embedded
+	 #+CAPTION:
+	 [[yt:https://www.youtube.com/watch?v=J---aiyznGQ]]
