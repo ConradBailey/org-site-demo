@@ -35,6 +35,7 @@ hand-drawn animation or 2D sprite-based graphics?
 	make a Superman movie without Superman taking flight, one fist
 	forward, cape fluttering in the wind. If Superman doesn't take
 	flight, or worse he does and it looks /bad/, the movie is ruined.
+  
 	[[yt:T0D7ovW5_nM]]
 
 	Every time I've watched /Superman/ with my dad he tells me how the
@@ -70,12 +71,14 @@ hand-drawn animation or 2D sprite-based graphics?
 	and transformed it into an offputting festival of jerk kids, jerk
 	conductors, a jerk hobo, and jerk elves that sound like they're on
 	the brink of stage four throat cancer.
+  
 	[[yt:yZ9LmDUG3xg]]
 
 	Bad graphics ruin good movies. Animators don't get any points for
 	coming close; either do it well or don't do it at all. A more subtle
 	instance is this fight scene that shatters immersion when it can't
 	decide if it's live action or animated.
+  
   [[yt:P8GGwgI2vGU]]
 
 * Cartoons, Sprites, and 3D
@@ -83,7 +86,10 @@ hand-drawn animation or 2D sprite-based graphics?
 	soon, and that's a shame. The medium drives infects the form and can
 	produce artefacts that don't have a 3D superior or even equal.
 
-	For instance, the master work that is /Fantasia 2000/ [[yt:qWJ-kGuOA_Q]]
+	For instance, the master work that is /Fantasia 2000/
+	
+	[[yt:qWJ-kGuOA_Q]]
+	
 	or the movies of Studio Ghibli. They execute the "every frame a
 	painting" philosophy to a degree that has not been attained by 3D
 	animation.
@@ -100,6 +106,7 @@ hand-drawn animation or 2D sprite-based graphics?
 
 * Reviews
 ** /La Faim/ (/Hunger/) - 1974
+	 
 	 [[yt:eqMKy74HKXs]]
 
 	 This is a short film by Peter Foldes, a pioneer of
@@ -116,6 +123,7 @@ hand-drawn animation or 2D sprite-based graphics?
 	 gluttony it portrays.
 
 ** /Arabesque/ - 1975
+	 
 	 [[yt:sQrq7S0dP54]]
 
 	 What do you get when you mix sitar music, psychedelics,
@@ -141,32 +149,32 @@ hand-drawn animation or 2D sprite-based graphics?
 	 allows them to blend in more easily with the special effects,
 	 especially in regards to lighting. It can also provide a dramatic,
 	 old time movie feeling like /Nosferatu/.
-	 [[./old_timey.png]]
+	 [[./old_timey.jpg]]
 
 	 The only "glitches" occur when actors must interact with computer
 	 generated scenery, like steps and depth. But then sometimes they
 	 /nail it/ like this scene where Crom holds on for his life.
-	 [[./hanging_on.png]]
+	 [[./hanging_on.jpg]]
 
 	 My favorite effects are building the light-cycles
-	 [[./build_cycle.png]]
+	 [[./build_cycle.jpg]]
 
 	 Seeing the light-cycle internals
-	 [[./in_cycle.png]]
+	 [[./in_cycle.jpg]]
 
 	 But oddly not the actual light-cycles. I find those visuals pretty
 	 boring. They look like every 3D-Modeling demonstration since the
 	 beginning of time. Maybe I am just too far removed in time and this
 	 stereotype is a result of these graphics.
-	 [[./cycle_grid.png]]
+	 [[./cycle_grid.jpg]]
 
 	 I much prefer when there is some [[https://en.wikipedia.org/wiki/Perlin_noise][noise]] in the lights. If you look
 	 closely you'll see the robed figures are standing on nothing, and
 	 in action the animated surface isn't /quite/ angled like the real
 	 one Jeff Bridges walks down.
-	 [[./noise.png]]
+	 [[./noise.jpg]]
 
 	 Also, Ram has just about the /weirdest/ death scene. It's all
 	 smiles, semi-pained expressions, and wide eyes. I want to know what
 	 the director was saying that inspires a man to behave this way.
-	 [[./creepy.png]]
+	 [[./creepy.jpg]]
