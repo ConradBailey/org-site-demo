@@ -44,7 +44,7 @@ First off, [[https://github.com/ConradBailey/Slipper-LED-Status-Detector][the co
 * Ground Work
 ** OpenCV
    I've never done any image manipulation programmatically, so some
-   naïve googling led me to [[http://opencv.org/][OpenCV]], which is apparently a pretty
+   naive googling led me to [[http://opencv.org/][OpenCV]], which is apparently a pretty
    popular computer vision library. I've never used this library
    before. I chose to use the Python bindings over C++ for this project
    to make exploring the functionality a little easier: open up an
