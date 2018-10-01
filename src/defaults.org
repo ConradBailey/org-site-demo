@@ -19,7 +19,7 @@
 # Nav
 
 #+SITE-MAIN-TITLE: Conrad Bailey
-
+#+SITE-URL: https://conradbailey.github.io/org-site-demo
 #+SHOW-NAV-LINKS: True
 #+NAV-URL: None
 #+NAV-NAME: None

@@ -2,25 +2,25 @@
 <rss version="2.0">
   <channel>
     <title>Conrad Bailey&#x27;s Blog</title>
-    <link>/blog</link>
+    <link>https://conradbailey.github.io/org-site-demo/blog</link>
     <description>Conrad Bailey&#x27;s personal blog</description>
-    <pubDate>Mon, 01 Oct 2018 15:25:03 EDT</pubDate>
-    <lastBuildDate>Mon, 01 Oct 2018 15:25:03 EDT</lastBuildDate>
+    <pubDate>Mon, 01 Oct 2018 15:44:43 EDT</pubDate>
+    <lastBuildDate>Mon, 01 Oct 2018 15:44:43 EDT</lastBuildDate>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>Org-Site (https://github.com/ConradBailey/org-site)</generator>
     <item>
       <title>Detecting LED Changes with a Raspberry Pi Camera</title>
-      <link>/blog/charging_slippers</link>
+      <link>https://conradbailey.github.io/org-site-demo/blog/charging_slippers</link>
       <description><![CDATA[How I trigger text alerts telling when the LEDs on my slipper batteries indicate a full charge]]></description>
       <pubDate>2018-10-01</pubDate>
-      <guid>/blog/charging_slippers</guid>
+      <guid>https://conradbailey.github.io/org-site-demo/blog/charging_slippers</guid>
     </item>
     <item>
       <title>Test Post - Please Ignore</title>
-      <link>/blog/test-post</link>
+      <link>https://conradbailey.github.io/org-site-demo/blog/test-post</link>
       <description><![CDATA[Test Post - Please Ignore]]></description>
       <pubDate>2018-10-01</pubDate>
-      <guid>/blog/test-post</guid>
+      <guid>https://conradbailey.github.io/org-site-demo/blog/test-post</guid>
     </item>
   </channel>
 </rss>
