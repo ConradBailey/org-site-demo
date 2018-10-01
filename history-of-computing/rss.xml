@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>History of Computing Reflections</title>
+    <link>/history-of-computing</link>
+    <description>My responses to the readings for [[https://www3.nd.edu/~pbui/teaching/cse.40850.sp18/][CSE 40850 - History of Computing]]</description>
+    <pubDate>Mon, 01 Oct 2018 15:25:03 EDT</pubDate>
+    <lastBuildDate>Mon, 01 Oct 2018 15:25:03 EDT</lastBuildDate>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>Org-Site (https://github.com/ConradBailey/org-site)</generator>
+    <item>
+      <title>Reading 00: Traditional Board Games and Modern Video Games</title>
+      <link>/history-of-computing/reading00</link>
+      <description><![CDATA[Response to Reading 00 https://www3.nd.edu/~pbui/teaching/cse.40850.sp18/reading00.html]]></description>
+      <pubDate>2018-01-20</pubDate>
+      <guid>/history-of-computing/reading00</guid>
+    </item>
+    <item>
+      <title>Reading 01: The Highs and Lows of Early Video Games</title>
+      <link>/history-of-computing/reading01</link>
+      <description><![CDATA[Response to Reading 01 https://www3.nd.edu/~pbui/teaching/cse.40850.sp18/reading01.html]]></description>
+      <pubDate>2018-01-27</pubDate>
+      <guid>/history-of-computing/reading01</guid>
+    </item>
+    <item>
+      <title>Reading 02: The Golden Age</title>
+      <link>/history-of-computing/reading02</link>
+      <description><![CDATA[Response to Reading 02 https://www3.nd.edu/~pbui/teaching/cse.40850.sp18/reading02.html]]></description>
+      <pubDate>2018-02-03</pubDate>
+      <guid>/history-of-computing/reading02</guid>
+    </item>
+    <item>
+      <title>Reading 03: Console vs. Computer</title>
+      <link>/history-of-computing/reading03</link>
+      <description><![CDATA[Response to Reading 03 https://www3.nd.edu/~pbui/teaching/cse.40850.sp18/reading03.html]]></description>
+      <pubDate>2018-02-11</pubDate>
+      <guid>/history-of-computing/reading03</guid>
+    </item>
+    <item>
+      <title>Reading 04: Console vs. Console</title>
+      <link>/history-of-computing/reading04</link>
+      <description><![CDATA[Response to Reading 04 https://www3.nd.edu/~pbui/teaching/cse.40850.sp18/reading04.html]]></description>
+      <pubDate>2018-02-17</pubDate>
+      <guid>/history-of-computing/reading04</guid>
+    </item>
+    <item>
+      <title>Reading 05: Passive vs. Interactive Gaming</title>
+      <link>/history-of-computing/reading05</link>
+      <description><![CDATA[Response to Reading 05 https://www3.nd.edu/~pbui/teaching/cse.40850.sp18/reading05.html]]></description>
+      <pubDate>2018-02-24</pubDate>
+      <guid>/history-of-computing/reading05</guid>
+    </item>
+    <item>
+      <title>Reading 06: Computers&#x27; Place in the Visual Arts</title>
+      <link>/history-of-computing/reading06</link>
+      <description><![CDATA[Response to Reading 06 https://www3.nd.edu/~pbui/teaching/cse.40850.sp18/reading06.html]]></description>
+      <pubDate>2018-03-24</pubDate>
+      <guid>/history-of-computing/reading06</guid>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Detecting LED Changes with a Raspberry Pi Camera</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Conrad Bailey" />
+    <meta name="description" content="How I trigger text alerts telling when the LEDs on my slipper batteries indicate a full charge" />
+    <meta name="keywords" content="raspberry pi, pi, raspicam, camera, python, python2, opencv, led, sms, maker, ifttt, slipper, machine vision, computer vision, arch, linux, systemd, timers" />
+    <link rel="stylesheet" href="/media/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/media/css/prettify.css" type="text/css">
+  </head>
+  <body class="container">
+    <div>
+      <header class="masthead">
+        <h1 class="masthead-title"><a href="">Conrad Bailey</a></h1>
+        <p></p>
+        <ul>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/history-of-computing">History of Computing</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </header>
+    </div>
+
+<div>
+<div class="post">
+<h1>Detecting LED Changes with a Raspberry Pi Camera</h1>
+<p>
+First off, <a href="https://github.com/ConradBailey/Slipper-LED-Status-Detector">the code</a>.
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">TL;DR</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+I used OpenCV's Python bindings to process pictures of my slipper
+batteries on a Raspberry Pi. I schedule that script with a systemd
+timer to run every minute; it sends me a text via IFTTT if they're
+done charging.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">The Problem</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+This Christmas my awesome girlfriend got me the best present: <a href="https://www.firebox.com/Yeti-Heated-Slippers/p7228?mkt=en-us">heated
+slippers</a>.
+<img src="./slippers.jpg" alt="slippers.jpg" />
+I <i>suffer</i> from chronically cold feet in the winter, and these do
+just the trick. Mine came with <a href="./battery.jpg">batteries</a> that charge via USB. While
+they're charging the LED is red, <img src="./red.jpg" alt="red.jpg" /> but when they're full
+they switch to blue.  <img src="./blue.jpg" alt="blue.jpg" /> I wanted a text alert when that
+happened so I didn't have to keep checking on them.
+</p>
+
+<p>
+I'm going to be moving around a lot in the coming months, and I
+would like to be able to move my Pi around to do other projects. I
+don't want to tweak my program every time I touch
+something. Therefore my solution should tolerate changes in
+distance, angle, position, and lighting.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Thinking Up the Solution</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+The simplest solution is detecting the change in signal
+electrically; some high voltage somewhere makes red, somewhere else
+is blue, etc. But I don't want to take my battery apart. So let's
+try <a href="https://en.wikipedia.org/wiki/Machine_vision">machine vision</a>. I have a <a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/">Raspberry Pi 3</a> sitting around doing
+server stuff, so let's hook up a <a href="https://www.raspberrypi.org/products/camera-module/">camera</a> and detect the LEDs that
+way.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">Ground Work</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1">OpenCV</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+I've never done any image manipulation programmatically, so some
+naive googling led me to <a href="http://opencv.org/">OpenCV</a>, which is apparently a pretty
+popular computer vision library. I've never used this library
+before. I chose to use the Python bindings over C++ for this project
+to make exploring the functionality a little easier: open up an
+interpreter, a /tmp/test.py in another window, and have at it.
+</p>
+
+<p>
+I used OpenCV 3.2, because it's what my Pi's Linux distrobution
+(Arch) provided. I went through some of the <a href="http://docs.opencv.org/3.2.0/d6/d00/tutorial_py_root.html">OpenCV 3.2 tutorials</a>
+and <a href="http://docs.opencv.org/2.4/doc/tutorials/tutorials.html">2.4 tutorials</a> to get my feet under me while taking note of
+anything that looked relevant.
+</p>
+
+<p>
+The <a href="http://docs.opencv.org/">OpenCV documenation</a> is pretty good. The Python bindings are not
+explicitly documented very well, but the parallels with the C++
+structure are fairly obvious, so the documentation is practically
+interchangeable. The only trouble I encountered was with the
+<a href="http://docs.opencv.org/trunk/d0/d7a/classcv_1_1SimpleBlobDetector.html">SimpleBlobDetector</a>, but I'll get to that later.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2">Raspberry Pi Camera</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+There's two versions: the <a href="https://www.adafruit.com/products/3099">regular camera</a> (for regular use, which I
+have), and <a href="https://www.adafruit.com/products/3100">NoIR</a> (for low-light usage, which I do not have).
+</p>
+
+<p>
+For help configuring it on Arch Linux, I used the <a href="https://wiki.archlinux.org/index.php/Raspberry_Pi#Raspberry_Pi_camera_module">Wiki page</a>. My
+<code>/boot/config.txt</code> looks exactly like the wiki example, and I added
+<code>/opt/vc/bin</code> to my <code>PATH</code>.
+</p>
+
+<p>
+<code>raspistill</code> does not have a <code>man</code> page, but <code>$ raspistill -?</code> or <code>$
+   raspistill --help</code> has a lot of information. Outside of that
+command, I didn't find anything helpful, so experimentation was in
+order.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4-3" class="outline-3">
+<h3 id="sec-4-3">Texting</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+I did an <a href="https://en.wikipedia.org/wiki/Internet_of_things">IoT</a> workshop on campus last year, and I've been itching to
+use some of the cool stuff I learned there. One of the things I
+learned was how to trigger SMS texts through an <a href="https://ifttt.com/discover">IFTTT
+recipe</a>. Thanks to the <a href="https://internal-api.ifttt.com/maker">Maker Channel</a>, you can trigger an IFTTT
+recipe from anything that can perform a <a href="https://en.wikipedia.org/wiki/POST_(HTTP)">POST request</a>. Python
+happens to have a great HTTP library "for humans" called <a href="http://docs.python-requests.org/en/master/">Requests</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4-4" class="outline-3">
+<h3 id="sec-4-4">Scheduling Checks</h3>
+<div class="outline-text-3" id="text-4-4">
+<p>
+The program needs to check up on the batteries regularly so I can
+get up-to-the minute alerts! I figured there were two ways to do
+this:
+</p>
+
+<ol class="org-ol">
+<li>Call <code>sleep</code> at the end of a big <code>while</code> loop
+</li>
+<li>Make a <code>cron</code> job
+</li>
+</ol>
+
+<p>
+I decided #2 was best because <code>crond</code> is probably already running,
+which means less overhead. I also assume <code>cron</code> is better than me
+at sheduling after approx. 38 years of development. Plus this was
+an excuse to finally learn how to make a <code>cron</code> job!
+</p>
+
+<p>
+Oops -- I use Arch Linux on the Pi, which uses <a href="https://www.freedesktop.org/wiki/Software/systemd/~">systemd</a>, which does
+not use <code>cron</code>. Systemd instead has <a href="https://wiki.archlinux.org/index.php/Systemd/Timers">timers</a>. Oh well, I'm obviously
+not attached to <code>cron</code>, guess I'll learn timers this time.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">Data Collection</h2>
+<div class="outline-text-2" id="text-5">
+</div><div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1">Initial Observations</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+Before any decisions could be made I needed to know what kind of
+pictures I could get with the Raspicam. That requires a controlled
+environment: unmoving camera, stable lighting, and fixed battery
+positions. I don't have a fancy <a href="https://www.adafruit.com/products/3253">tripod</a>, so I just taped the camera
+in place, left the dining room light on, and marked off the battery
+positions with tape.
+<img src="./setup.jpg" alt="setup.jpg" />
+</p>
+
+<p>
+With this setup <code>$ raspistill -o test.jpg</code> produced a photo like
+<a href="./default-example.jpg">this</a>. I did not inline that because it's a <b>3280x2464</b>
+photo. That's <i>waaayyy</i> more info (and therefore processing
+required) than I need. It also took a while to take the photo. So I
+ended up with <code>$ raspistill -w 320 -h 240 -t 1</code> as my basic
+photo-taking command.
+</p>
+
+<p>
+An astute reader would notice I didn't have any monitors or
+keyboards plugged into my Pi. I only work on my Pi remotely, over
+<a href="https://wiki.archlinux.org/index.php/Secure_Shell">SSH</a>. So how do I view the data I collect? I store all my data in a
+<code>pics/</code> directory on the Pi, mount that directory locally via
+<a href="https://wiki.archlinux.org/index.php/SSHFS">sshfs</a>, and then open the test image, e.g. <code>pics/test.jpg</code>, in
+a browser tab. That way I can just overwrite <code>test.jpg</code> with
+another experiment and all I have to do is refresh the tab!
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-5-2" class="outline-3">
+<h3 id="sec-5-2">A Breakthrough</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+I tested various light conditions: <b>extreme light</b> by shining a
+flashlight from point blank range; <b>regular light</b> with the dining
+room's regular incandescent fixtures; <b>low light</b> by casting a
+shadow in regular light; and <b>no light</b> by turning off all the
+lights. I could not find a combination of <code>raspistill</code> options that
+produced good results in all conditions, so I settled on regular
+light. I intend to develop an approach for low light and no light
+in the near future.
+</p>
+
+<p>
+In regular light I could emphasize the LEDs by slowing the shutter
+speed with <code>-s 20000</code> thereby collecting more light in the
+image. The real breakthrough was <code>-ex spotlight</code> which nearly
+isolated the LEDs all by itself, producing images like this
+<img src="./spotlight-example.jpg" alt="spotlight-example.jpg" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">Taking an Approach</h2>
+<div class="outline-text-2" id="text-6">
+</div><div id="outline-container-sec-6-1" class="outline-3">
+<h3 id="sec-6-1">First Failure</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+I developed an initial approach from what I learned in the <a href="http://docs.opencv.org/3.2.0/d6/d00/tutorial_py_root.html">OpenCV
+tutorials</a>: The light is emitted in a circle, so I'll detect circles
+with <a href="http://docs.opencv.org/3.2.0/da/d53/tutorial_py_houghcircles.html">Hough Circles</a>, find the lights, measure the colors, and other
+vague goals. Turns out it's difficult to "find the lights" amongst
+all the potential circles (power buttons, wood swirls, reflections,
+etc), so I got no further than that.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-6-2" class="outline-3">
+<h3 id="sec-6-2">Getting Somewhere</h3>
+<div class="outline-text-3" id="text-6-2">
+<p>
+I read some more, and happened upon <a href="https://en.wikipedia.org/wiki/Blob_detection">Blobs</a>. I decided I could turn
+the bright LEDs into blobs by using a <a href="http://docs.opencv.org/3.2.0/d7/d4d/tutorial_py_thresholding.html">threshold</a> to abtain only the
+brightest pixels. I'd use those blobs as <a href="https://en.wikipedia.org/wiki/Mask_(computing)#Image_masks">masks</a> when measuring the
+colors of the LEDs. When they're both blue, it's done!
+</p>
+
+<p>
+Original Image
+<img src="./original.jpg" alt="original.jpg" />
+</p>
+
+<p>
+Grayscale
+<img src="./gray.jpg" alt="gray.jpg" />
+</p>
+
+<p>
+After Thresholding
+<img src="./thresh.jpg" alt="thresh.jpg" />
+</p>
+
+<p>
+After Thresholding with Blob Keypoints Highlighted (black center
+dot) and Circled (green, radius = 2 * blob_radius)
+<img src="./thresh_circles.jpg" alt="thresh_circles.jpg" />
+</p>
+
+<p>
+Original with Blob Keypoints Highlighted (black center dot) and
+Circled (green, radius = 2 * blob_radius)
+<img src="./original_circles.jpg" alt="original_circles.jpg" />
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-6-3" class="outline-3">
+<h3 id="sec-6-3">Measurements</h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+Since I have no computer vision experience, I think my approach for
+measuring blue vs. red may be rudimentary: find the mean value of
+the pixels in the blob, and if the B (blue) component is greater
+than the R (red) component, then it is emitting blue and therefore
+charged, otherwise it is still charging. This works for me, for now.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7">The Code</h2>
+<div class="outline-text-2" id="text-7">
+</div><div id="outline-container-sec-7-1" class="outline-3">
+<h3 id="sec-7-1">Python</h3>
+<div class="outline-text-3" id="text-7-1">
+</div><div id="outline-container-sec-7-1-1" class="outline-4">
+<h4 id="sec-7-1-1">Python 2</h4>
+<div class="outline-text-4" id="text-7-1-1">
+<p>
+I used Python2 instead of Python3 because it's easier for me to get
+help with Python2, and my local Linux distro, <a href="https://crux.nu/">CRUX</a>, won't be
+migrating for <a href="https://crux.nu/bugs/index.php?do=details&task_id=1339&project=1">a while</a>. I don't have strong opinions either way, I
+don't use Python that much.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-7-1-2" class="outline-4">
+<h4 id="sec-7-1-2">Logging</h4>
+<div class="outline-text-4" id="text-7-1-2">
+<p>
+You don't really have to think too much about this; anything you
+print to <code>stdout</code> will get recorded by <code>journalctl</code> with the
+appropriate information, so just <code>print</code> to your heart's desire
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-7-1-3" class="outline-4">
+<h4 id="sec-7-1-3">Temporary File</h4>
+<div class="outline-text-4" id="text-7-1-3">
+<p>
+We'll need a temporary file for storing images. <a href="https://docs.python.org/2/library/tempfile.html#tempfile.mkstemp">mkstemp</a> from
+<code>tempfile</code> with a '.jpg' suffix does the trick. I make sure to
+delete this file when I'm done.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-7-1-4" class="outline-4">
+<h4 id="sec-7-1-4">Subprocess</h4>
+<div class="outline-text-4" id="text-7-1-4">
+<p>
+I use <a href="https://docs.python.org/2/library/subprocess.html?highlight=subprocess#subprocess.check_call">check_call</a> from <code>subprocess</code> to do my <code>raspistill</code>
+bidding. It's important to use the absolute path to the binary
+because <code>systemd</code> will be handling the script's execution so we
+want to avoid <code>PATH</code> dependencies. It's also important to wrap this
+in a try-except block in case an error occurs with the command or
+camera and we can log that appropriately. Remember to exit with
+non-zero status!
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-7-1-5" class="outline-4">
+<h4 id="sec-7-1-5">Lighting Switch</h4>
+<div class="outline-text-4" id="text-7-1-5">
+<p>
+As I said earlier, I'd like to develop an approach to low-light
+scenarios in the future. To leave this door open, I let <code>main()</code>
+call either <code>day()</code> or <code>night()</code> depending on the lighting
+conditions detected. For now I'm detecting the difference by
+measuring the mean value of a grayscale image, my hypothesis being
+that a higher mean correlates to brighter lighting conditions. I'm
+not confident about this method, but it works for now.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-7-1-6" class="outline-4">
+<h4 id="sec-7-1-6">Image Preparation</h4>
+<div class="outline-text-4" id="text-7-1-6">
+<p>
+Often you'll find some OpenCV methods require single-channel
+grayscale images, others require multi-channel BGR images, and
+still other's take either one, semmingly at random. Just make sure
+you're reading the docs carefully before reaching out to
+StackOverflow.
+</p>
+
+<p>
+In this step I convert the image to grayscale and apply the
+threshold. I have a variable for each step, i.e. <code>original</code>,
+<code>grey</code>, <code>thresh</code>, etc. I could have jammed a bunch of these into a
+big one-liner, but this makes it easier to debug, step-through,
+and log. I determined the threshold empirically; thanks to <code>-ex
+    spotlight</code> there's a <i>lot</i> of wiggle room here.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-7-1-7" class="outline-4">
+<h4 id="sec-7-1-7">Blob Detection</h4>
+<div class="outline-text-4" id="text-7-1-7">
+<p>
+Of vital importance here is setting up your <code>params</code> in preparation
+for constructing the SBD (SimpleBlobDetector). A careful reading of
+the <a href="http://docs.opencv.org/trunk/d0/d7a/classcv_1_1SimpleBlobDetector.html">docs</a> will show that SBD's default constructor will search for
+dark blobs, but our blobs will be perfectly white (duh, it's a
+binary image), so we need to set <code>blobColor = 255</code>. By virtue of
+the binary image after thresholding we don't need to filter by any
+other values, so set all the filters to <code>False</code>. Finally construct
+your SBD and detect the <a href="http://docs.opencv.org/master/d2/d29/classcv_1_1KeyPoint.html">keypoints</a> corresponding to your blobs.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-7-1-8" class="outline-4">
+<h4 id="sec-7-1-8">Masking and Measuring</h4>
+<div class="outline-text-4" id="text-7-1-8">
+<p>
+Now for each keypoint (read blob (read LED)) detected, we want to
+use it as a <a href="https://en.wikipedia.org/wiki/Mask_(computing)#Image_masks">mask</a>, measuring the mean BGR value over the masked
+area.
+</p>
+
+<p>
+We'll get the original dimensions using <code>.shape()</code> (I couldn't find
+documentation for this method, sorry!). Then use those dimensions
+to start our mask with a completely black image using
+<a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.zeros.html#numpy.zeros">numpy.zeros()</a>. Next we'll draw a white disk (i.e. filled-in <a href="http://docs.opencv.org/3.2.0/d6/d6e/group__imgproc__draw.html#gaf10604b069374903dbd0f0488cb43670">circle</a>)
+on the mask at the location of the keypoint/blob/LED using the
+keypoint properties <code>pt</code> and <code>size</code> (which is equivalent to the
+diameter of the blob!).
+</p>
+
+<p>
+Now get the <a href="http://docs.opencv.org/3.2.0/d2/de8/group__core__array.html#ga191389f8a0e58180bb13a727782cd461">mean</a> over the masked area, and compare the B and R
+components!
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-7-1-9" class="outline-4">
+<h4 id="sec-7-1-9">Python Wrap-Up</h4>
+<div class="outline-text-4" id="text-7-1-9">
+<p>
+If any one of them is still charging, i.e. more red than blue, then
+we can just return 0 immediately. If they are all done charging,
+then we need to trigger the IFTTT recipe that sends the text, stop
+the timer, and return 0.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-7-2" class="outline-3">
+<h3 id="sec-7-2">IFTTT Recipe</h3>
+<div class="outline-text-3" id="text-7-2">
+</div><div id="outline-container-sec-7-2-1" class="outline-4">
+<h4 id="sec-7-2-1">Sign Up</h4>
+<div class="outline-text-4" id="text-7-2-1">
+<p>
+If you haven't already, create an <a href="https://ifttt.com/join">IFTTT</a> account. Be careful, IFTTT's
+account creation process is a little, <i>relaxed</i>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-7-2-2" class="outline-4">
+<h4 id="sec-7-2-2">Create the Recipe</h4>
+<div class="outline-text-4" id="text-7-2-2">
+<ol class="org-ol">
+<li>Click on your account name in the top right corner, and in the
+drop down menu choose "New Applet".
+</li>
+<li>Click on the big blue "+ this" link, then choose "Maker", then
+click "Connect".
+</li>
+<li>Choose "Receive a web request". This is the trigger mechanism,
+performed via HTTP POST request.
+</li>
+<li>Enter an event name and press "Create trigger". Mine is
+"slippers_charged". It's pretty arbitrary, but it will end up
+in the URL for the request
+</li>
+<li>Click on the big blue "+ that" link, then choose "SMS", then
+click "Connect".
+</li>
+<li>Enter your phone number in the pop-up window and click "Send
+PIN". Once you get the PIN on your phone, enter it in the
+appropriate field and press "Connect".
+</li>
+<li>Choose "Send me an SMS"
+</li>
+<li>Enter the message you'd like to receive. I didn't use any JSON
+variables, but if I had, they'd be sent via JSON in the request
+and interpreted here. Mine says "Your slippers are done
+charging!". Press "Create action".
+</li>
+<li>Press "Finish".
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-7-2-3" class="outline-4">
+<h4 id="sec-7-2-3">Test the Recipe</h4>
+<div class="outline-text-4" id="text-7-2-3">
+<p>
+Without signing out of IFTTT, go to the <a href="https://internal-api.ifttt.com/maker">Maker</a> website. It's not
+obvious that this place even exists, but it's useful. On this page
+is your API key, don't share this with anybody! Don't put it in a
+public repo!
+</p>
+
+<p>
+Click on "How to trigger events" or your API key to get
+instructions for testing the recipe. It can be done by entering a
+URL into a browser, or a simple <code>curl</code> command from the terminal.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-7-2-4" class="outline-4">
+<h4 id="sec-7-2-4">Add It to the Script</h4>
+<div class="outline-text-4" id="text-7-2-4">
+<p>
+Right before your <code>return</code> from <code>main()</code> in the script, call
+<a href="http://docs.python-requests.org/en/master/api/#requests.post">requests.post()</a> on the trigger URL. That's it!
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-7-3" class="outline-3">
+<h3 id="sec-7-3">Systemd Timer</h3>
+<div class="outline-text-3" id="text-7-3">
+<p>
+The <a href="https://wiki.archlinux.org/index.php/Systemd/Timers">Arch Wiki</a> page is always useful, but I found <a href="https://jason.the-graham.com/2013/03/06/how-to-use-systemd-timers/">Jason's Blog</a> to be
+much more pragmatic.
+</p>
+
+<p>
+My <code>timer</code> file:
+</p>
+<pre class="example">
+[Unit]
+Description=Checks slipper charging status every minute
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1min
+Unit=slipper_status.service
+
+[Install]
+WantedBy=multi-user.target
+</pre>
+
+<p>
+My <code>service</code> file:
+</p>
+<pre class="example">
+[Unit]
+Description=Check slipper charging status
+
+[Service]
+Type=simple
+ExecStart=/home/conrad/pics/imgedit.py
+</pre>
+
+<p>
+Start the timer with <code># systemctl start slipper_status.timer</code>. Make
+sure to end the timer in the script when appropriate with a
+subprocess call to <code>systemctl stop slipper_status.timer</code>. You can
+check on the timer with <code>$ systemctl list-timers --all</code>. You can
+check on the scripts logging output with <code>journalctl -e</code>.
+</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+      <div class="footer">
+        <p>
+          Site by - <a href="mailto:conrad@cbailey.tech">Conrad Bailey</a>
+          &nbsp;&nbsp;-&nbsp;&nbsp;
+          Powered by <a href="https://github.com/ConradBailey/org-site" target="_blank">org-site</a>
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>
