@@ -1,10 +1,10 @@
-#+TITLE:       Conrad Bailey's Homepage
+#+TITLE:       Org-Site Demo
 #+AUTHOR:      Conrad Bailey
-#+EMAIL:       conradbailey92@gmail.com
-#+DESCRIPTION: Where Conrad Bailey puts stuff for other people to see.
+#+EMAIL:       conrad@cbailey.tech
+#+DESCRIPTION: A demonstration of the org-site static website generator
 #+LANGUAGE:    en
 #+OPTIONS:     H:3 num:nil toc:niil \n:nil ::t |:t ^:nil -:nil f:t *:t <:t
 
 #+SHOW-META: False
 
-This is where I post the stuff I do and the things I have to share.
+This is a showcase of a website rendered by [[https://github.com/ConradBailey/org-site][org-site]].
