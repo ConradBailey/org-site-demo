@@ -17,9 +17,9 @@
 #+STYLESHEET-LIST: media/css/main.css media/css/prettify.css
 
 # Nav
-#+SITE-URL: https://www3.nd.edu/~cbailey8
+
 #+SITE-MAIN-TITLE: Conrad Bailey
-#+SITE-SUB-TITLE: Senior CSE - University of Notre Dame
+
 #+SHOW-NAV-LINKS: True
 #+NAV-URL: None
 #+NAV-NAME: None
@@ -27,6 +27,6 @@
 # Footer
 #+SHOW-META: True
 #+SITE-AUTHOR: Conrad Bailey
-#+SITE-AUTHOR-EMAIL: conradbailey92@gmail.com
+#+SITE-AUTHOR-EMAIL: conrad@cbailey.tech
 #+GENERATOR-URL: https://github.com/ConradBailey/org-site
 #+GENERATOR-NAME: org-site
