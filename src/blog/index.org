@@ -2,3 +2,6 @@
 #+BLOG-NAME: Conrad Bailey's Blog
 #+NAV-NAME: Blog
 #+DESCRIPTION: Conrad Bailey's personal blog
+
+This is a simple blog and a demonstration of how simple elements may
+render
