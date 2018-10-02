@@ -1,7 +1,6 @@
 #+TITLE:       Test Post - Please Ignore
 #+AUTHOR:      Conrad Bailey
 #+EMAIL:       test@test.com
-#+DATE:        1970-01-01 Thurs
 #+KEYWORDS:    test post please ignore
 #+TAGS:
 #+LANGUAGE:    en

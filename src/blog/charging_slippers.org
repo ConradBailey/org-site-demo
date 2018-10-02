@@ -1,8 +1,5 @@
 #+TITLE:       Detecting LED Changes with a Raspberry Pi Camera
 #+AUTHOR:      Conrad Bailey
-#+EMAIL:       conrad@cbailey.tech
-#+DATE:        2017-01-06 Fri
-#+URI:         /blog/%y/%m/%d/detecting_led_changes_with_raspicam/
 #+KEYWORDS:    raspberry pi, pi, raspicam, camera, python, python2, opencv, led, sms, maker, ifttt, slipper, machine vision, computer vision, arch, linux, systemd, timers
 #+TAGS:        Raspberry Pi, Python, OpenCV
 #+LANGUAGE:    en
